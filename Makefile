@@ -1,3 +1,5 @@
+TARGET	= pa0
+
 all: pa0
 
 pa0: pa0.c
