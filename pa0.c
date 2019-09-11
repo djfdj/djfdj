@@ -18,6 +18,7 @@
 #include <errno.h>
 
 #define MAX_NR_TOKENS 32	/* Maximum number of tokens in a command */
+#define MAX_TOKEN_LEN 64	/* Maximum length of single token */
 #define MAX_COMMAND	256		/* Maximum length of command string */
 
 /***********************************************************************
