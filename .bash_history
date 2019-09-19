@@ -714,3 +714,141 @@ su -
 ls
 vi pp.c
 ls
+git status
+git init
+git remote add origin https://github.com/djfdj/masterpiece.git
+git push origin +master
+git remote add origin https://github.com/sslab-ajou/sce212-pa0-2019f
+git pull origin master
+ls
+vi pa0.c
+git remote rm origin
+ls
+git remote add origin https://github.com/sslab-ajou/sce212-pa0-2019f
+git pull origin master
+ls
+rm README.md
+ls
+mv pa0.c p1.c
+ls
+vi p1.c
+git pull origin master
+l;s
+ls
+vi pa0.c
+vi p1.c
+vi pa0.c
+gcc pa0.c
+vi pa0.c
+
+./a.out input
+vi pa0.c
+gcc pa0.c
+vi pa0.c
+gcc pa0.c
+vi pa0.c
+gcc pa0.c
+ls
+rm Makefile
+rm READMD.md
+rmREADME.md
+rm README.md
+rm pa0.c
+rm input
+git pull origin master
+ls
+git rm pa0.c
+git rm README.md
+git rm input
+git rm Makefile
+git pull origin master
+ls
+git stash
+git pull origin master
+ls
+vi pa0.c
+gcc pa0.c
+vi pa0.c
+gcc pa0.c
+./a.out input
+ls
+echo "# art" >> README.md
+git init
+add README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/djfdj/art.git
+git remote rm origin
+git remote add origin https://github.com/djfdj/art.git
+git push -u origin master
+ls
+vi pa0.c
+git status
+git add pa0.c
+ls
+git psuh pa0.c
+git push origin master
+git commit -m "seconmd"
+ls
+vi pa0.c
+git add .
+git commit -m "2222" 
+git push origin master
+ls
+gcc pa0.c
+./a.out input
+vipa0.c
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out
+ls
+gcc pa0.c
+./a.out pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out
+gcc pa0.c
+./a.out input [B
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+vi pa0.c
+gcc pa0.c
+./a.out input
+vi pa0.c
+gcc pa0.c
+./a.out
