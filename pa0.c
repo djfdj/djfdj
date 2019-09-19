@@ -53,16 +53,38 @@
  *	Return 0 after filling in @nr_tokens and @tokens[] properly
  *
  */
-static int parse_command(char *command, int *nr_tokens, char *tokens[])
-{
-	/* TODO
-	 * Followings are example code. You should delete them and implement 
-	 * your own code here
-	 */
-	tokens[0] = "hello";
-	tokens[1] = "world";
-	*nr_tokens = 2;
-
+static int parse_command(char *command, int *nr_tokens, char *tokens[]){
+	int n = 0;
+	int scantoken = 0;
+	int tokensize = 0;
+	int tokenscount = 0;
+	int  k = 0;
+	while(1){
+		if((command[n] != ' ') && (command[n] != '\t')){
+			while((command[scantoken] != ' ') * (command[scantoken] != '\t')){
+				if(command[scantoken] == '\0') break;
+				tokensize++;
+				scantoken++;
+				}
+		char* token = (char*)malloc (sizeof(char)*(tokensize+1));
+		while((command[n] != ' ') * (command[n] != '\t')){
+			if(command[n] == '\0') break;
+			token[k] = command[n];
+			k++;
+			n++; }
+		token[k] = '\0';
+		tokens[tokenscount] = token;
+		(*nr_tokens)++;
+		if(command[n] == '\0') break;
+		tokenscount++;
+		tokensize = 0;
+		k = 0;
+		}
+		if((command[n] == ' ') || (command[n]  == '\t') ){
+			n++;
+			scantoken++;
+		}
+	}
 	return 0;
 }
 
@@ -90,7 +112,8 @@ int main(int argc, const char *argv[])
 		parse_command(line, &nr_tokens, tokens);
 
 		fprintf(stderr, "nr_tokens = %d\n", nr_tokens);
-		for (int i = 0; i < nr_tokens; i++) {
+		int i;
+		for (i = 0; i < nr_tokens; i++) {
 			fprintf(stderr, "tokens[%d] = %s\n", i, tokens[i]);
 		}
 		printf("\n");
