@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main(void)
+{
+puts("안녕!");
+return 0;
+}
