@@ -85,7 +85,6 @@ static int parse_command(char *command, int *nr_tokens, char *tokens[]){
 		}
 		if(command[n] == '\n'){
 			tokens[tokenscount] = '\0';
-			(*nr_tokens)++;
 			break;
 
 		}
